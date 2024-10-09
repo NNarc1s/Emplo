@@ -40,8 +40,10 @@ ul>li{
 
 }
 input {
-  display: block;
-  margin: 2px 0px 2px 0px;
+  padding: 0.25rem;
+  height:1.5rem;
+  width:15rem;
+
 }
 button {
   height:2rem;
@@ -49,8 +51,8 @@ button {
   background-color: #6c7c8c;
   color: #d5e8f5;
   font-size: 15px;
-  padding: 5px;
-  border-width: 2px;
+
+
   border-color: transparent;
 }
 button:hover{
@@ -69,24 +71,28 @@ form>h2{
 .search-filters{
     display: grid;
     grid-template-columns:1fr 1fr auto;
-    gap:12px;
+    gap:1rem
 }
 .last-item{
-    max-width: 15rem;
+
+  max-width: 16rem;
+  margin: auto;
     background-color: transparent;
     display: flex;
+    justify-content:space-between
+    
 }
 .last-item>:nth-child(1){
-color:#e6e6e6;
+  color:#e6e6e6;
   background-color: transparent;
   font-size:1.2rem;
   border-color: transparent;
 }
 .primary-btn{
+ 
 color:#d5e8f5;
 font-size:1rem;
 font-weight: 600;
-
 background-color: transparent;
 }
 .secondary-btn{
@@ -94,6 +100,8 @@ background-color: transparent;
     color:#e6e6e6;
     border-width: 2px;
     border-color: #9dc7c7;
+    margin-right: 5px;
+    padding: 0.25rem;
 }
 table{
   padding-left: 2rem;
