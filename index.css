@@ -13,6 +13,7 @@
   --secondary-rejected-status: #a6756c;
   --primary-text: #0e0f0f;
   --secondary-text: #878787;
+  --page-control:#e8f5fc
 }
 
 * {
@@ -23,6 +24,7 @@
 
 body {
   background-color: var(--background-primary);
+
 }
 button:hover {
   cursor: pointer;
@@ -121,12 +123,13 @@ form {
   gap: 0.5rem;
 }
 .form-btn {
-  height: 3rem;
+  height: 2.5rem;
+  padding: 0.5rem;
   width: 10rem;
   color: #e8e8e8;
   background-color: var(--primary-btn);
   border: none;
-  border-radius: 1rem;
+  border-radius: 10px;
   display: flex;
   gap: 0.5rem;
   justify-content: center;
@@ -135,39 +138,98 @@ form {
 /* 
 TABLE */
 table {
-  border: 1px solid var(--gray-100);
   border-collapse: collapse;
-  width: 100%;
-
+  border: 1px solid var(--gray-100);
   margin-top: 2rem;
+  width:100%;
+  padding:0 4rem;
 }
+
 .th-container {
   display: flex;
+gap:0.5rem;
   justify-content: space-between;
   align-items: center;
 }
 th,
 td {
-  padding: 1rem;
+  text-wrap: nowrap;
+  text-align: start;
+padding:0.5rem 1rem;
   border: 1px solid var(--gray-100);
+}
+th{
+  font-size: small;
+  font-weight: bold;
+}
+td{
+  font-size: small;
 }
 tr:nth-child(even) {
   background-color: var(--gray-200);
+  font-weight: bold;
 }
-.table-btn-container {
+.table-btn-align {
+  border:transparent;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   align-items: center;
 }
 .table-btn {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   background-color: transparent;
-  border: transparent;
+
+}
+.btn-details {
+  display: flex;
+  background-color: transparent;
+  border: none;
 }
 .waitingStatus {
-  padding: 0.5rem;
+  font-weight: 100;
+  padding:0.25rem 0.5rem;
   background-color: var(--primary-waiting-status);
   color: var(--secondary-waiting-status);
+  border-radius: 10px;
+}
+.confirmedStatus{
+  font-weight: 100;
+  padding:0.25rem 0.5rem;
+  background-color: var(--primary-confirmed-status);
+  color: var(--secondary-confirmed-status);
+  border-radius: 10px;
+}
+.rejectedStatus{
+  font-weight: 100;
+  padding:0.25rem 0.5rem;
+  background-color: var(--primary-rejected-status);
+  color: var(--secondary-rejected-status);
+  border-radius: 10px;
+}
+.table-footer-left{
+display: flex;
+gap:0.75rem;
+align-items: center;
+}
+.page-control-cnt{
+  display: flex;
+  justify-content: end;
+  gap:0.45rem;
+  padding: 0.25rem;
+}
+.page{
+  padding: 0.25rem;
+border:none;
+background-color: transparent;
+}
+.selected-page{
+  border:1px solid black
+}
+.page-control{
+  display: flex;
+  align-items: center;
+background-color: var(--page-control);
+border:none;
 }
