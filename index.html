@@ -7,126 +7,155 @@
     <title>Emplo</title>
   </head>
   <body>
-    <aside>
-      <h1>Emplo</h1>
-  <nav>
-    <section>
-<h3>MENU</h3>
-        <ul>
-            <li>
-                <a>Home</a>
-            </li>
-            <li>
-                <a>Employees</a>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h3>ACTION</h3>
-        <ul>
-            <li>
-
-                <button class="primary-btn">Settings</button>
-            </li>
-            <li>
-
-                <button class="primary-btn">Log out</button>
-            </li>
-        </ul>
-    </section>
-  </nav>
-    </aside>
-   
-    <main class="main">
-        <header class="header">
-            <div class="header-center">
-                <p>Hello, <span>user@email.com</span></p>
-                <button class="primary-btn">Log out</button>
-            </div>
-          </hr>
-        </header>
-      <form class="form">
-       <h2>Search employees</h2>
-     
-        <div class="search-filters">
-            <input type="text"  placeholder="Search by name"></input>
-            <input type="email" placeholder="Search by email"></input>
-            <input type ="text" placeholder="Search by department"></input>
-            <input type="text" placeholder="Search by job title"></input>
-            <input type="text" placeholder="Search by job title"></input>
-            <div class="last-item">
-                <button >Clear filters</button>
-                <button class="secondary-btn">Search</button>
-              </div>
+    <!-- HEADER  -->
+    <header>
+      <nav class="main-nav">
+        <aside class="sidebar-container">
+          <button class="sidebar-menu">
+            <img src="./icons/icons8-menu-24.png" />
+          </button>
+        </aside>
+        <h1 class="main-nav-title">Pre-Registration</h1>
+      </nav>
+      <nav class="user-nav">
+        <button class="search-user">
+          <img src="./icons/icons8-search-24.png" />
+        </button>
+        <button class="notif-user">
+          <img src="./icons/icons8-interface-24.png" />
+        </button>
+        <figure>
+          <img
+            class="profile-img"
+            alt="Profile picture"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMvEbKIGsZCbu1m-rgbPgukFUgHg2SiDfuLw&s"
+          />
+        </figure>
+        <h3 class="user-name">John Doe</h3>
+        <button class="profile-details">
+          <img
+            style="width: 15px; height: 15px"
+            src="./icons/icons8-chevron-down-30.png"
+          />
+        </button>
+      </nav>
+    </header>
+    <main id="main">
+      <!-- FORM -->
+      <form>
+        <div class="search-form">
+          <img
+            style="width: 15px; width: 15px"
+            src="./icons/icons8-search-24.png"
+          />
+          <input class="input-form" type="search" placeholder="Search..." />
         </div>
-       
+        <div class="form-right">
+          <button class="form-btn">
+            <img
+              style="width: 25px; height: 25px"
+              src="./icons/icons8-microsoft-excel-50.png"
+            />Export to excel
+          </button>
+          <button id="open-modal"
+            style="background-color: var(--secondary-btn)"
+            class="form-btn"
+          >
+            Add to
+            <img
+              style="width: 25px; height: 25px"
+              src="./icons/icons8-plus-50.png"
+            />
+          </button>
+        </div>
       </form>
-      <table>
+
+ <!-- T A B L E   F O R M  -->
+
+      <form id="table-form" class="table-form">
+        <div class="form-grup">
+          <label for="Serial">Serial</label>
+          <input type="text" id="Serial" name="Serial"></input>
+        </div>
+        <div class="form-grup">
+          <label for="Date">Date</label>
+          <input type="text" id="Date" name="Date"></input>
+        </div>
+        <div class="form-grup"> 
+          <label for="Branch">Branch</label>
+          <input type="text" id="Branch" name="Branch"></input></div>
+        <div class="form-grup">
+          <label for="Course">Course</label>
+          <input type="text" id="Course" name="Course"></input></div>
+        <div class="form-grup">        <label for="Division">Division</label>
+          <input type="text" id="Division" name="Division"></input></div>
+        <div class="form-grup">      <label for="Customer">Customer</label>
+          <input type="text" id="Customer" name="Customer"></input></div>
+        <div class="form-grup">  <label for="CSR">CSR</label>
+          <input type="text" id="CSR"  name="CSR"></input></div>
+        <div class="form-grup">
+          <label for="Status">Status</label>
+          <input type="text" id="Status"  name="Status"></input></div>
+        <div class="form-grup">
+          <label for="Outline Shared">Outline Shared</label>
+          <input type="text" id="Outline Shared" name="Outline Shared"></input></div>
+        <div class="form-grup">    
+           <label for="Deadline">Deadline</label>
+          <input type="text" id="Deadline" name="Deadline"></input></div>
+          <button id="submit-form" class="submit-form form-btn">Submit</button>
+<btn id="close-modal" class="close-modal">
+  <img src="./icons/x.png">
+</btn>
+        
+
+
+  
+  
+
+      </form>
+
+      <!-- T A B L E  -->
+
+      <table class="table">
         <thead>
-          <tr >
-            <th><input type="checkbox"></input></th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Job Title</th>
-            <th>Departament
-            </th>
-          </tr>
         </thead>
         <tbody>
-          <tr>
-            <td><input type="checkbox"></input></td>
-            <td>John Doe</td>
-            <td>john@doe@email.com</td>
-            <td>Software Developer</td>
-            <td>Development</td>
-          </tr>
-          <tr>
-            <td><input type="checkbox"></input></td>
-            <td>John Doe</td>
-            <td>john@doe@email.com</td>
-            <td>Software Developer</td>
-            <td>Development</td>
-          </tr>
-          <tr>
-            <td><input type="checkbox"></input></td>
-            <td>John Doe</td>
-            <td>john@doe@email.com</td>
-            <td>Software Developer</td>
-            <td>Development</td>
-          </tr>
-          <tr>
-            <td><input type="checkbox"></input></td>
-            <td>John Doe</td>
-            <td>john@doe@email.com</td>
-            <td>Software Developer</td>
-            <td>Development</td>
-          </tr>
-          <tr>
-            <td><input type="checkbox"></input></td>
-            <td>John Doe</td>
-            <td>john@doe@email.com</td>
-            <td>Software Developer</td>
-            <td>Development</td>
-          </tr>
-          <tr>
-            <td><input type="checkbox"></input></td>
-            <td>John Doe</td>
-            <td>john@doe@email.com</td>
-            <td>Software Developer</td>
-            <td>Development</td>
-          </tr>
-          <tr>
-            <td><input type="checkbox"></input></td>
-            <td>John Doe</td>
-            <td>john@doe@email.com</td>
-            <td>Software Developer</td>
-            <td>Development</td>
-          </tr>
-        
-         
-          
         </tbody>
-      </table>
-    </main>
+        <tfoot>
+          <tr>
+
+            <td  colspan="5" style="border: none">
+              <div class="table-footer-left">
+                <p>Lines per Page</p>
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+            </td>
+            <td colspan="5"  style="border: none">
+              <div class="page-control-cnt">
+                <button class="page-control">
+                  <img
+                  style="width: 15px; height:15px"
+                  src="./icons/icons8-chevron-left-30.png"
+                  />
+                </button>
+                <div id="pageCnt">
+                </div>
+                  <button class="page-control">
+                  <img
+                  style="width: 15px;height:15px"
+                  src="./icons/icons8-chevron-right-30.png"
+                  />
+                </button>
+              </div>
+            </td>
+          </tr>
+          </tfoot>
+        </table>
+      </main>
   </body>
+  <script  src="index.js"></script>
 </html>
