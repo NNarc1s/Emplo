@@ -40,7 +40,7 @@
         </button>
       </nav>
     </header>
-    <main>
+    <main id="main">
       <!-- FORM -->
       <form>
         <div class="search-form">
@@ -57,7 +57,7 @@
               src="./icons/icons8-microsoft-excel-50.png"
             />Export to excel
           </button>
-          <button
+          <button id="open-modal"
             style="background-color: var(--secondary-btn)"
             class="form-btn"
           >
@@ -70,417 +70,92 @@
         </div>
       </form>
 
+ <!-- T A B L E   F O R M  -->
+
+      <form id="table-form" class="table-form">
+        <div class="form-grup">
+          <label for="Serial">Serial</label>
+          <input type="text" id="Serial" name="Serial"></input>
+        </div>
+        <div class="form-grup">
+          <label for="Date">Date</label>
+          <input type="text" id="Date" name="Date"></input>
+        </div>
+        <div class="form-grup"> 
+          <label for="Branch">Branch</label>
+          <input type="text" id="Branch" name="Branch"></input></div>
+        <div class="form-grup">
+          <label for="Course">Course</label>
+          <input type="text" id="Course" name="Course"></input></div>
+        <div class="form-grup">        <label for="Division">Division</label>
+          <input type="text" id="Division" name="Division"></input></div>
+        <div class="form-grup">      <label for="Customer">Customer</label>
+          <input type="text" id="Customer" name="Customer"></input></div>
+        <div class="form-grup">  <label for="CSR">CSR</label>
+          <input type="text" id="CSR"  name="CSR"></input></div>
+        <div class="form-grup">
+          <label for="Status">Status</label>
+          <input type="text" id="Status"  name="Status"></input></div>
+        <div class="form-grup">
+          <label for="Outline Shared">Outline Shared</label>
+          <input type="text" id="Outline Shared" name="Outline Shared"></input></div>
+        <div class="form-grup">    
+           <label for="Deadline">Deadline</label>
+          <input type="text" id="Deadline" name="Deadline"></input></div>
+          <button id="submit-form" class="submit-form form-btn">Submit</button>
+<btn id="close-modal" class="close-modal">
+  <img src="./icons/x.png">
+</btn>
+        
+
+
+  
+  
+
+      </form>
+
       <!-- T A B L E  -->
 
       <table class="table">
         <thead>
-          <tr>
-            <th colspan="1">
-              <div class="th-container">
-                <span>Serial</span>
-                <img
-                  style="text-align: right"
-                  width="15"
-                  height="15"
-                  src="https://img.icons8.com/ios-glyphs/30/filter.png"
-                  alt="filter"
-                />
-              </div>
-            </th>
-
-            <th colspan="1">
-              <div class="th-container">
-                <span>Date</span>
-                <img
-                  style="text-align: right"
-                  width="15"
-                  height="15"
-                  src="https://img.icons8.com/ios-glyphs/30/filter.png"
-                  alt="filter"
-                />
-              </div>
-            </th>
-
-            <th colspan="1">
-              <div class="th-container">
-                <span>Branch</span>
-                <img
-                  style="text-align: right"
-                  width="15"
-                  height="15"
-                  src="https://img.icons8.com/ios-glyphs/30/filter.png"
-                  alt="filter"
-                />
-              </div>
-            </th>
-            <th colspan="3">
-              <div class="th-container">
-                <span>Course</span>
-                <img
-                  style="text-align: right"
-                  width="15"
-                  height="15"
-                  src="https://img.icons8.com/ios-glyphs/30/filter.png"
-                  alt="filter"
-                />
-              </div>
-            </th>
-
-            <th colspan="3">
-              <div class="th-container">
-                <span>Division</span>
-                <img
-                  style="text-align: right"
-                  width="15"
-                  height="15"
-                  src="https://img.icons8.com/ios-glyphs/30/filter.png"
-                  alt="filter"
-                />
-              </div>
-            </th>
-            <th colspan="2">
-              <div class="th-container">
-                <span>Customer</span>
-                <img
-                  style="text-align: right"
-                  width="15"
-                  height="15"
-                  src="https://img.icons8.com/ios-glyphs/30/filter.png"
-                  alt="filter"
-                />
-              </div>
-            </th>
-            <th colspan="2">
-              <div class="th-container">
-                <span>CSR</span>
-                <img
-                  style="text-align: right"
-                  width="15"
-                  height="15"
-                  src="https://img.icons8.com/ios-glyphs/30/filter.png"
-                  alt="filter"
-                />
-              </div>
-            </th>
-            <th colspan="2">
-              <div class="th-container">
-                <span>Status</span>
-                <img
-                  style="text-align: right"
-                  width="15"
-                  height="15"
-                  src="https://img.icons8.com/ios-glyphs/30/filter.png"
-                  alt="filter"
-                />
-              </div>
-            </th>
-            <th colspan="1">
-              <div class="th-container">
-                <span>Outline Shared</span>
-                <img
-                  style="text-align: right"
-                  width="15"
-                  height="15"
-                  src="https://img.icons8.com/ios-glyphs/30/filter.png"
-                  alt="filter"
-                />
-              </div>
-            </th>
-            <th colspan="2">
-              <div class="th-container">
-                <span>Deadline</span>
-                <img
-                  style="text-align: right"
-                  width="15"
-                  height="15"
-                  src="https://img.icons8.com/ios-glyphs/30/filter.png"
-                  alt="filter"
-                />
-              </div>
-            </th>
-
-            <th>Action</th>
-          </tr>
         </thead>
         <tbody>
-          <tr>
-            <td colspan="1">5577</td>
-            <td colspan="1">29 sep,2024</td>
-            <td colspan="1">Dubai</td>
-            <td colspan="3">Project Management Professional ()</td>
-            <td colspan="3">Business</td>
-            <td colspan="2">Mai Dubai LLC</td>
-            <td colspan="2">Danaia Hankir</td>
-            <td colspan="2">
-              <p class="waitingStatus">Sent to Lm</p>
-            </td>
-            <td colspan="1">No</td>
-            <td colspan="2">29 Oct,2024</td>
-            <td colspan="1">
-              <div class="table-btn-align">
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-edit-24.png" />
-                </button>
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-trash-32.png" />
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="1">5577</td>
-            <td colspan="1">29 sep,2024</td>
-            <td colspan="1">Dubai</td>
-            <td colspan="3">Emotional Intelligence</td>
-            <td colspan="3">Project and process Management</td>
-            <td colspan="2">Mai Dubai LLC</td>
-            <td colspan="2">Danaia Hankir</td>
-            <td colspan="2">
-              <p class="confirmedStatus">Sent to Lm</p>
-            </td>
-            <td colspan="1">No</td>
-            <td colspan="2">29 Oct,2024</td>
-            <td colspan="1">
-              <div class="table-btn-align">
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-edit-24.png" />
-                </button>
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-trash-32.png" />
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="1">5577</td>
-            <td colspan="1">29 sep,2024</td>
-            <td colspan="1">Dubai</td>
-            <td colspan="3">Emotional Intelligence</td>
-            <td colspan="3">Business</td>
-            <td colspan="2">Mai Dubai LLC</td>
-            <td colspan="2">Danaia Hankir</td>
-            <td colspan="2">
-              <p class="rejectedStatus">Sent to Lm</p>
-            </td>
-            <td colspan="1">No</td>
-            <td colspan="2">29 Oct,2024</td>
-            <td colspan="1">
-              <div class="table-btn-align">
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-edit-24.png" />
-                </button>
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-trash-32.png" />
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="1">5577</td>
-            <td colspan="1">29 sep,2024</td>
-            <td colspan="1">Dubai</td>
-            <td colspan="3">Project Management Professional ()</td>
-            <td colspan="3">Business</td>
-            <td colspan="2">Mai Dubai LLC</td>
-            <td colspan="2">Danaia Hankir</td>
-            <td colspan="2">
-              <p class="waitingStatus">Sent to Lm</p>
-            </td>
-            <td colspan="1">No</td>
-            <td colspan="2">29 Oct,2024</td>
-            <td colspan="1">
-              <div class="table-btn-align">
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-edit-24.png" />
-                </button>
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-trash-32.png" />
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="1">5577</td>
-            <td colspan="1">29 sep,2024</td>
-            <td colspan="1">Dubai</td>
-            <td colspan="3">Emotional Intelligence</td>
-            <td colspan="3">Project and process Management</td>
-            <td colspan="2">Mai Dubai LLC</td>
-            <td colspan="2">Danaia Hankir</td>
-            <td colspan="2">
-              <p class="confirmedStatus">Sent to Lm</p>
-            </td>
-            <td colspan="1">No</td>
-            <td colspan="2">29 Oct,2024</td>
-            <td colspan="1">
-              <div class="table-btn-align">
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-edit-24.png" />
-                </button>
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-trash-32.png" />
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="1">5577</td>
-            <td colspan="1">29 sep,2024</td>
-            <td colspan="1">Dubai</td>
-            <td colspan="3">Emotional Intelligence</td>
-            <td colspan="3">Business</td>
-            <td colspan="2">Mai Dubai LLC</td>
-            <td colspan="2">Danaia Hankir</td>
-            <td colspan="2">
-              <p class="rejectedStatus">Sent to Lm</p>
-            </td>
-            <td colspan="1">No</td>
-            <td colspan="2">29 Oct,2024</td>
-            <td colspan="1">
-              <div class="table-btn-align">
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-edit-24.png" />
-                </button>
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-trash-32.png" />
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="1">5577</td>
-            <td colspan="1">29 sep,2024</td>
-            <td colspan="1">Dubai</td>
-            <td colspan="3">Project Management Professional ()</td>
-            <td colspan="3">Business</td>
-            <td colspan="2">Mai Dubai LLC</td>
-            <td colspan="2">Danaia Hankir</td>
-            <td colspan="2">
-              <p class="waitingStatus">Sent to Lm</p>
-            </td>
-            <td colspan="1">No</td>
-            <td colspan="2">29 Oct,2024</td>
-            <td colspan="1">
-              <div class="table-btn-align">
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-edit-24.png" />
-                </button>
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-trash-32.png" />
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="1">5577</td>
-            <td colspan="1">29 sep,2024</td>
-            <td colspan="1">Dubai</td>
-            <td colspan="3">Emotional Intelligence</td>
-            <td colspan="3">Project and process Management</td>
-            <td colspan="2">Mai Dubai LLC</td>
-            <td colspan="2">Danaia Hankir</td>
-            <td colspan="2">
-              <p class="confirmedStatus">Sent to Lm</p>
-            </td>
-            <td colspan="1">No</td>
-            <td colspan="2">29 Oct,2024</td>
-            <td colspan="1">
-              <div class="table-btn-align">
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-edit-24.png" />
-                </button>
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-trash-32.png" />
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="1">5577</td>
-            <td colspan="1">29 sep,2024</td>
-            <td colspan="1">Dubai</td>
-            <td colspan="3">Emotional Intelligence</td>
-            <td colspan="3">Business</td>
-            <td colspan="2">Mai Dubai LLC</td>
-            <td colspan="2">Danaia Hankir</td>
-            <td colspan="2">
-              <p class="rejectedStatus">Sent to Lm</p>
-            </td>
-            <td colspan="1">No</td>
-            <td colspan="2">29 Oct,2024</td>
-            <td colspan="1">
-              <div class="table-btn-align">
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-edit-24.png" />
-                </button>
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-trash-32.png" />
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="1">5577</td>
-            <td colspan="1">29 sep,2024</td>
-            <td colspan="1">Dubai</td>
-            <td colspan="3">Project Management Professional ()</td>
-            <td colspan="3">Business</td>
-            <td colspan="2">Mai Dubai LLC</td>
-            <td colspan="2">Danaia Hankir</td>
-            <td colspan="2">
-              <p class="waitingStatus">Sent to Lm</p>
-            </td>
-            <td colspan="1">No</td>
-            <td colspan="2">29 Oct,2024</td>
-            <td colspan="1">
-              <div class="table-btn-align">
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-edit-24.png" />
-                </button>
-                <button class="btn-details">
-                  <img class="table-btn" src="./icons/icons8-trash-32.png" />
-                </button>
-              </div>
-            </td>
-          </tr>
         </tbody>
         <tfoot>
-      
-          <td colspan="15" style="border: none;">
-            <div class="table-footer-left">
-              <p>Lines per Page</p>
-              <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-            </div>
-          </td>
-          <td colspan="4" style="border: none">
-            <div class="page-control-cnt">
-              <button class="page-control">
-                <img
-                  style="width: 15px"
+          <tr>
+
+            <td  colspan="5" style="border: none">
+              <div class="table-footer-left">
+                <p>Lines per Page</p>
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+            </td>
+            <td colspan="5"  style="border: none">
+              <div class="page-control-cnt">
+                <button class="page-control">
+                  <img
+                  style="width: 15px; height:15px"
                   src="./icons/icons8-chevron-left-30.png"
-                />
-              </button>
-              <button class="page">1</button>
-              <button class="page selected-page">2</button>
-              <button class="page">3</button>
-              <button class="page">...</button>
-              <button class="page">6</button>
-              <button class="page">7</button>
-              <button class="page">8</button>
-              <button class="page-control">
-                <img
-                  style="width: 15px"
+                  />
+                </button>
+                <div id="pageCnt">
+                </div>
+                  <button class="page-control">
+                  <img
+                  style="width: 15px;height:15px"
                   src="./icons/icons8-chevron-right-30.png"
-                />
-              </button>
-            </div>
-          </td>
-        </tfoot>
-      </table>
-    </main>
+                  />
+                </button>
+              </div>
+            </td>
+          </tr>
+          </tfoot>
+        </table>
+      </main>
   </body>
+  <script  src="index.js"></script>
 </html>
