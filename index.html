@@ -59,10 +59,11 @@
           </button>
           <button id="open-modal"
             style="background-color: var(--secondary-btn)"
-            class="form-btn"
+            class="form-btn open-modal"
           >
             Add to
             <img
+            class="open-modal"
               style="width: 25px; height: 25px"
               src="./icons/icons8-plus-50.png"
             />
@@ -83,25 +84,35 @@
         </div>
         <div class="form-grup"> 
           <label for="Branch">Branch</label>
-          <input type="text" id="Branch" name="Branch"></input></div>
+          <input type="text" id="Branch" name="Branch"></input>
+        </div>
         <div class="form-grup">
           <label for="Course">Course</label>
-          <input type="text" id="Course" name="Course"></input></div>
-        <div class="form-grup">        <label for="Division">Division</label>
-          <input type="text" id="Division" name="Division"></input></div>
-        <div class="form-grup">      <label for="Customer">Customer</label>
-          <input type="text" id="Customer" name="Customer"></input></div>
-        <div class="form-grup">  <label for="CSR">CSR</label>
-          <input type="text" id="CSR"  name="CSR"></input></div>
+          <input type="text" id="Course" name="Course"></input>
+        </div>
+        <div class="form-grup">        
+          <label for="Division">Division</label>
+          <input type="text" id="Division" name="Division"></input>
+      </div>
+        <div class="form-grup">     
+           <label for="Customer">Customer</label>
+          <input type="text" id="Customer" name="Customer"></input>
+        </div>
+        <div class="form-grup"> 
+           <label for="CSR">CSR</label>
+          <input type="text" id="CSR"  name="CSR"></input>
+      </div>
         <div class="form-grup">
           <label for="Status">Status</label>
-          <input type="text" id="Status"  name="Status"></input></div>
+          <input type="text" id="Status"  name="Status"></input>
+        </div>
         <div class="form-grup">
           <label for="Outline Shared">Outline Shared</label>
           <input type="text" id="Outline Shared" name="Outline Shared"></input></div>
         <div class="form-grup">    
            <label for="Deadline">Deadline</label>
-          <input type="text" id="Deadline" name="Deadline"></input></div>
+          <input type="text" id="Deadline" name="Deadline"></input>
+        </div>
           <button id="submit-form" class="submit-form form-btn">Submit</button>
 <btn id="close-modal" class="close-modal">
   <img src="./icons/x.png">
@@ -136,7 +147,7 @@
             </td>
             <td colspan="5"  style="border: none">
               <div class="page-control-cnt">
-                <button class="page-control">
+                <button id="prev-page" class="page-control ">
                   <img
                   style="width: 15px; height:15px"
                   src="./icons/icons8-chevron-left-30.png"
@@ -144,7 +155,7 @@
                 </button>
                 <div id="pageCnt">
                 </div>
-                  <button class="page-control">
+                  <button id="next-page" class="page-control ">
                   <img
                   style="width: 15px;height:15px"
                   src="./icons/icons8-chevron-right-30.png"
