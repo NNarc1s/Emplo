@@ -24,7 +24,6 @@
 
 body {
   background-color: var(--background-primary);
-  overflow: hidden;
 }
 button:hover {
   cursor: pointer;
@@ -95,7 +94,6 @@ header {
 }
 /* MAIN CONTENT */
 main {
-
   padding: 2rem 4rem;
   position: relative;
 }
